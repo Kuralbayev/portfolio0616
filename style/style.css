@@ -113,7 +113,6 @@ section {
     color: #09be09;
 }
 
-
 .services {
     background-color: #131010;
     padding: 50px 20px;
@@ -182,9 +181,10 @@ section {
 }
 
 .contact h2 {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     color: #09be09;
     margin-bottom: 20px;
+    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
@@ -268,3 +268,83 @@ section {
     background-color: #08a208;
     transform: translateY(-3px);
 }
+
+/* Адаптивные стили */
+@media (max-width: 1200px) {
+    .service-item {
+        width: 220px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        display: none;
+        z-index: 999;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-menu a {
+        padding: 1rem;
+    }
+
+    .projects .project-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+    .home img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .navbar-logo {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
+
